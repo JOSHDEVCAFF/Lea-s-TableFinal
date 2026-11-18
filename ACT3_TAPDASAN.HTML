@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery - Activity No. 3</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            background:
+                linear-gradient(to bottom,
+                    rgba(255, 183, 77, 0.85) 0%,
+                    rgba(255, 154, 139, 0.85) 25%,
+                    rgba(108, 180, 220, 0.85) 50%,
+                    rgba(64, 135, 170, 0.85) 75%,
+                    rgba(40, 100, 130, 0.85) 100%),
+                url('https://i.imgur.com/9ZkqL2b.jpg') center center no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Georgia', 'Times New Roman', serif;
+            min-height: 100vh;
+        }
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            margin-bottom: 40px;
+            text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+            letter-spacing: 2px;
+        }
+        .gallery-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+        .gallery-grid img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+            border: 3px solid #fff;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .gallery-grid img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+            border-color: #ffd700;
+        }
+    </style>
+</head>
+<body>
+    <h1>✨ My Photo Gallery ✨</h1>
+    <div class="gallery-container">
+        <div class="gallery-grid">
+            <!-- ROW 1 -->
+            <img src="https://i.imgur.com/p8A2380.jpg" alt="Photo 1">
+            <img src="https://i.imgur.com/dnjjbsM.jpg" alt="Photo 2">
+            <img src="https://i.imgur.com/r86nklz.jpg" alt="Photo 3">
+            <img src="https://i.imgur.com/78Dfz75.jpg" alt="Photo 4">
+            <img src="https://i.imgur.com/CYGk1LN.jpg" alt="Photo 5">
+
+            <!-- ROW 2 -->
+            <img src="https://i.imgur.com/eChEeHp.jpg" alt="Photo 6">
+            <img src="https://i.imgur.com/hzPDOOH.jpg" alt="Photo 7">
+            <img src="https://i.imgur.com/afWEwJY.jpg" alt="Photo 8">
+            <img src="https://i.imgur.com/MSJcga7.jpg" alt="Photo 9">
+            <img src="https://i.imgur.com/chVAvl4.jpg" alt="Photo 10">
+
+            <!-- ROW 3 -->
+            <img src="https://i.imgur.com/FdytQab.jpg" alt="Photo 11">
+            <img src="https://i.imgur.com/gm75lyq.jpg" alt="Photo 12">
+            <img src="https://i.imgur.com/I0sjrcQ.jpg" alt="Photo 13">
+            <img src="https://i.imgur.com/mwC7Czj.jpg" alt="Photo 14">
+            <img src="https://i.imgur.com/FVdFC1O.jpg" alt="Photo 15">
+
+            <!-- ROW 4 -->
+            <img src="https://i.imgur.com/yfFMgSL.jpg" alt="Photo 16">
+            <img src="https://i.imgur.com/Vb6Hl4N.jpg" alt="Photo 17">
+            <img src="https://i.imgur.com/J3aLTJS.jpg" alt="Photo 18">
+            <img src="https://i.imgur.com/4Pdj4YF.jpg" alt="Photo 19">
+            <img src="https://i.imgur.com/I4LTmgV.jpg" alt="Photo 20">
+        </div>
+    </div>
+</body>
+</html>

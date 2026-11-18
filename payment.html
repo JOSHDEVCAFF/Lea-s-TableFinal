@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Choose a mock payment method for your Lea's Table order preview."><title>Payment Preview — Lea's Table</title><link rel="stylesheet" href="styles.css"><script src="site.js" defer></script></head>
+<body><div data-site-header></div><main>
+  <section class="page-hero"><div class="wrap"><p class="eyebrow">09 — Payment gateway</p><h1>One last<br><em>little step.</em></h1><p>Choose how you would pay. This demonstration does not collect payment details or process a real transaction.</p></div></section>
+  <section class="page-content wrap"><div class="checkout-layout"><div><div class="notice">Preview only: never enter real card or wallet details. Information entered here is not sent or stored.</div><form data-payment-form autocomplete="off">
+    <div class="payment-options" role="radiogroup" aria-label="Choose a payment method">
+      <label><input type="radio" name="payment-method" value="cash" checked> <span><strong>Cash on delivery</strong><br><span class="payment-note">Pay when your order arrives (preview only).</span></span></label>
+      <label><input type="radio" name="payment-method" value="wallet"> <span><strong>Digital wallet</strong><br><span class="payment-note">Enter sample details to preview the form.</span></span></label>
+      <label><input type="radio" name="payment-method" value="card"> <span><strong>Card</strong><br><span class="payment-note">Enter sample details to preview the form.</span></span></label>
+    </div>
+    <fieldset class="payment-details" data-payment-fields="wallet" hidden disabled>
+      <legend>Digital wallet details</legend>
+      <p class="detail-note">Use sample information only. No wallet is connected.</p>
+      <div class="field"><label for="wallet-provider">Wallet provider</label><select id="wallet-provider" name="wallet-provider" required><option value="" selected disabled>Choose a provider</option><option value="gcash">GCash</option><option value="maya">Maya</option></select></div>
+      <div class="field"><label for="wallet-account-name">Account name</label><input id="wallet-account-name" name="wallet-account-name" type="text" autocomplete="off" placeholder="Sample Name" required></div>
+      <div class="field"><label for="wallet-contact">Wallet mobile number or email</label><input id="wallet-contact" name="wallet-contact" type="text" autocomplete="off" placeholder="sample@example.com" required></div>
+    </fieldset>
+    <fieldset class="payment-details" data-payment-fields="card" hidden disabled>
+      <legend>Card details</legend>
+      <p class="detail-note">Use sample information only. This form does not authorize or process a card.</p>
+      <div class="field"><label for="cardholder-name">Name on card</label><input id="cardholder-name" name="cardholder-name" type="text" autocomplete="off" placeholder="Sample Name" required></div>
+      <div class="field"><label for="card-number">Card number</label><input id="card-number" name="card-number" type="text" inputmode="numeric" autocomplete="off" placeholder="0000 0000 0000 0000" pattern="[0-9 ]{12,23}" title="Enter sample digits only." maxlength="23" required></div>
+      <div class="form-row">
+        <div class="field"><label for="card-expiry">Expiry date (MM/YY)</label><input id="card-expiry" name="card-expiry" type="text" inputmode="numeric" autocomplete="off" placeholder="MM/YY" pattern="(0[1-9]|1[0-2])/[0-9]{2}" title="Use MM/YY format." maxlength="5" required></div>
+        <div class="field"><label for="card-security-code">Security code</label><input id="card-security-code" name="card-security-code" type="password" inputmode="numeric" autocomplete="off" placeholder="3 or 4 digits" pattern="[0-9]{3,4}" title="Enter 3 or 4 sample digits." maxlength="4" required></div>
+      </div>
+    </fieldset>
+    <button class="button button-red" type="submit" data-payment-submit disabled>Complete order preview <span>↗</span></button><p data-payment-status class="form-status" aria-live="polite"></p>
+  </form></div><aside class="summary-box"><p class="eyebrow">Your estimated total</p><div class="summary-line summary-total"><strong>Order total</strong><strong data-payment-total>₱0</strong></div><p class="payment-note">This is a non-functional storefront preview. No payment is processed.</p><a class="showcase-link" href="index.html#menu">Back to the menu ↗</a></aside></div></section>
+</main><div data-site-footer></div></body></html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Beautiful Fruit Background</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 50px 20px;
+            font-family: 'Alice', serif;
+            font-size: 22px;
+            color: #3e2723;
+            background-image: url('https://images.unsplash.com/photo-1490750967868-88aa4486c946?w=1200');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-attachment: fixed;
+            background-size: cover;
+            position: relative;
+            min-height: 100vh;
+        }
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(
+                to bottom right,
+                rgba(255, 255, 255, 0.5),
+                rgba(255, 248, 220, 0.5)
+            );
+            z-index: -1;
+        }
+        .container {
+            max-width: 520px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 35px;
+            border-radius: 24px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+        }
+        h3 {
+            font-size: 32px;
+            color: #e67e22;
+            text-align: center;
+            margin-bottom: 25px;
+            letter-spacing: 1px;
+        }
+        ol {
+            margin: 0 0 35px 0;
+            padding-left: 30px;
+        }
+        li {
+            margin: 15px 0;
+            padding: 12px 15px;
+            border-radius: 12px;
+            background-color: rgba(255, 248, 220, 0.85);
+            transition: 0.3s ease;
+        }
+        li:hover {
+            background-color: rgba(255, 239, 180, 0.95);
+            transform: translateX(5px);
+            cursor: default;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Numbered list:</h3>
+        <ol>
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+        <h3>Letters list:</h3>
+        <ol type="A">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+    </div>
+</body>
+</html>

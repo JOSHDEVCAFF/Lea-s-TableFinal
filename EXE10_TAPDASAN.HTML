@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature & Fruits — Enhanced Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alice&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            font-family: 'Alice', serif;
+            font-size: 22px;
+            color: #2c1810;
+            background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200') no-repeat center center fixed;
+            background-size: cover;
+            padding: 40px 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: rgba(255, 255, 255, 0.25);
+            z-index: -1;
+        }
+
+        .falling-fruit {
+            position: fixed;
+            font-size: 30px;
+            z-index: 0;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-50px) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+                opacity: 0.5;
+            }
+        }
+
+        .container {
+            max-width: 550px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, rgba(240, 248, 235, 0.92), rgba(230, 245, 220, 0.92));
+            padding: 40px;
+            border-radius: 28px;
+            box-shadow: 0 15px 40px rgba(45, 80, 22, 0.18);
+            border: 2px solid rgba(144, 190, 109, 0.35);
+            position: relative;
+            z-index: 1;
+        }
+
+        h3 {
+            font-family: 'Alice', serif;
+            font-size: 28px;
+            color: #2d5016;
+            margin: 28px 0 18px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid rgba(144, 190, 109, 0.4);
+        }
+
+        h3:first-child {
+            margin-top: 0;
+        }
+
+        ol {
+            margin: 0 0 15px 35px;
+            padding: 0;
+        }
+
+        li {
+            font-family: 'Alice', serif;
+            font-size: 22px;
+            margin: 12px 0;
+            padding: 12px 18px;
+            border-radius: 14px;
+            background: rgba(255, 255, 255, 0.65);
+            transition: all 0.3s ease;
+        }
+
+        li:hover {
+            background: rgba(196, 230, 170, 0.7);
+            transform: translateX(6px);
+        }
+    </style>
+</head>
+<body>
+    <div class="falling-fruit" style="left: 10%; animation-duration: 8s; animation-delay: 0s;">🍎</div>
+    <div class="falling-fruit" style="left: 25%; animation-duration: 10s; animation-delay: 1s;">🍌</div>
+    <div class="falling-fruit" style="left: 40%; animation-duration: 9s; animation-delay: 2s;">🍋</div>
+    <div class="falling-fruit" style="left: 60%; animation-duration: 11s; animation-delay: 0.5s;">🍊</div>
+    <div class="falling-fruit" style="left: 75%; animation-duration: 8.5s; animation-delay: 3s;">🍎</div>
+    <div class="falling-fruit" style="left: 88%; animation-duration: 9.5s; animation-delay: 1.5s;">🍌</div>
+
+    <div class="container">
+        <h3>Lowercase letters list:</h3>
+        <ol type="a">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+
+        <h3>Roman numbers list:</h3>
+        <ol type="I">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+
+        <h3>Lowercase Roman numbers list:</h3>
+        <ol type="i">
+            <li>Apples</li>
+            <li>Bananas</li>
+            <li>Lemons</li>
+            <li>Oranges</li>
+        </ol>
+    </div>
+</body>
+</html>

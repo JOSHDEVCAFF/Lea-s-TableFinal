@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chasing the Dream</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: linear-gradient(180deg,
+                #ffd89b 0%,
+                #fce38a 20%,
+                #a8d8ea 45%,
+                #66c2d1 70%,
+                #3a91a8 100%);
+            font-family: 'Georgia', 'Times New Roman', serif;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://www.transparenttextures.com/patterns/soft-wave.png');
+            opacity: 0.35;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .wrapper {
+            max-width: 650px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.94);
+            padding: 35px;
+            border-radius: 14px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 {
+            text-align: center;
+            color: #e65100;
+            border-bottom: 2px solid #ff9800;
+            padding-bottom: 10px;
+        }
+
+        .stanza {
+            margin: 28px 0 10px 0;
+            padding: 12px 18px;
+            border-left: 4px solid #f57c00;
+            background-color: rgba(255, 243, 224, 0.6);
+        }
+
+        .stanza p {
+            margin: 6px 0;
+            color: #bf3600;
+            font-size: 17px;
+        }
+
+        .image-row {
+            display: flex;
+            gap: 10px;
+            margin: 12px 0 25px 22px;
+        }
+
+        .image-row img {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border: 2px solid #e65100;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Chasing the Dream</h1>
+
+        <!-- STANZA 1 — The Struggle -->
+        <div class="stanza">
+            <p>The road is rough, the climb is steep,</p>
+            <p>With heavy heart and little sleep.</p>
+            <p>Obstacles rise to block my way,</p>
+            <p>But I won’t turn or walk away.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://i.imgur.com/k78oPIm.jpg" alt="Image 1">
+            <img src="https://i.imgur.com/kTjzZ0m.jpg" alt="Image 2">
+            <img src="https://i.imgur.com/jiHQH5n.jpg" alt="Image 3">
+        </div>
+
+        <!-- STANZA 2 — Keeping Hope -->
+        <div class="stanza">
+            <p>They say it’s hard, they say it’s far,</p>
+            <p>That dreams are just a distant star.</p>
+            <p>But I will push through rain and night,</p>
+            <p>Holding on with all my might.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://i.imgur.com/3zmXyJu.jpg" alt="Stanza 2 Image 1">
+            <img src="https://i.imgur.com/iI8eoaY.jpg" alt="Stanza 2 Image 2">
+            <img src="https://i.imgur.com/g32tvpg.jpg" alt="Stanza 2 Image 3">
+        </div>
+
+        <!-- STANZA 3 — Reaching the Goal -->
+        <div class="stanza">
+            <p>Every scar will tell my story,</p>
+            <p>Every tear will lead to glory.</p>
+            <p>When I stand where I have aimed,</p>
+            <p>All the struggle will have gained.</p>
+        </div>
+        <div class="image-row">
+            <img src="https://i.imgur.com/OOZQprn.jpg" alt="Stanza 3 Image 1">
+            <img src="https://i.imgur.com/kmPnvQv.jpg" alt="Stanza 3 Image 2">
+            <img src="https://i.imgur.com/HYnACUN.jpg" alt="Stanza 3 Image 3">
+        </div>
+    </div>
+</body>
+</html>

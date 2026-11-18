@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information — Lea Tapdasan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            min-height: 100vh;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        .container {
+            background: #ffffff;
+            max-width: 550px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(43, 108, 184, 0.15);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            color: #2b6cb8;
+            border-bottom: 2px solid #2b6cb8;
+            padding-bottom: 15px;
+        }
+
+        .detail-row {
+            display: flex;
+            padding: 15px 0;
+            border-bottom: 1px solid #e2e8f0;
+            transition: background-color 0.2s ease;
+        }
+
+        .detail-row:last-child {
+            border-bottom: none;
+        }
+
+        .detail-row:hover {
+            background-color: #f8fafc;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 8px;
+        }
+
+        .label {
+            width: 160px;
+            font-weight: 700;
+            color: #2b6cb8;
+        }
+
+        .value {
+            flex: 1;
+            color: #2d3748;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 480px) {
+            .detail-row {
+                flex-direction: column;
+                padding: 12px 0;
+            }
+            .label {
+                width: 100%;
+                margin-bottom: 5px;
+            }
+            .container {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Personal Information</h2>
+
+        <div class="detail-row">
+            <div class="label">Name:</div>
+            <div class="value">Lea Tapdasan</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Age:</div>
+            <div class="value">18 years old</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Address:</div>
+            <div class="value">Iba, Basak, Lapu-Lapu City</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Contact No:</div>
+            <div class="value">+639068242677</div>
+        </div>
+
+        <div class="detail-row">
+            <div class="label">Email Address:</div>
+            <div class="value">leatapdasan569@gmail.com</div>
+        </div>
+    </div>
+</body>
+</html>
