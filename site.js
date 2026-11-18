@@ -83,9 +83,9 @@ function initHeroSlider() {
   const image = document.querySelector(".hero-photo");
   if (!image) return;
   const slides = [
-    { src: "images/hero-sushi.jpg", alt: "Fresh sushi rolls arranged on a dark platter", caption: "Flavors to find your way home" },
-    { src: "images/tonkotsu-ramen.jpg", alt: "A bowl of tonkotsu ramen with sliced pork", caption: "A little warmth in every bowl" },
-    { src: "images/pan-fried-dumplings.jpg", alt: "Golden pan-fried dumplings ready to share", caption: "Made fresh, made to be shared" }
+    { src: "ihero-sushi.jpg", alt: "Fresh sushi rolls arranged on a dark platter", caption: "Flavors to find your way home" },
+    { src: "tonkotsu-ramen.jpg", alt: "A bowl of tonkotsu ramen with sliced pork", caption: "A little warmth in every bowl" },
+    { src: "pan-fried-dumplings.jpg", alt: "Golden pan-fried dumplings ready to share", caption: "Made fresh, made to be shared" }
   ];
   let active = 0;
   const render = () => {
