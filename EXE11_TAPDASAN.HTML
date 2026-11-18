@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popular Search Engines</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            min-height: 100vh;
+            background: url('https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=1200') no-repeat center center fixed;
+            background-size: cover;
+            padding: 60px 25px;
+            font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+            position: relative;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.65), rgba(220,235,210,0.6));
+            z-index: -1;
+        }
+
+        .container {
+            max-width: 520px;
+            margin: 0 auto;
+            background: rgba(255, 255, 255, 0.96);
+            padding: 50px 45px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(34, 139, 34, 0.25);
+            border: 1px solid rgba(144, 238, 144, 0.3);
+            backdrop-filter: blur(8px);
+        }
+
+        h1 {
+            text-align: center;
+            background: linear-gradient(135deg, #2e7d32, #66bb6a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 35px;
+            letter-spacing: 1px;
+        }
+
+        .intro {
+            font-size: 20px;
+            color: #2e7d32;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #e8f5e9;
+        }
+
+        ol {
+            margin-left: 10px;
+            list-style: none;
+            counter-reset: item;
+        }
+
+        li {
+            counter-increment: item;
+            margin: 18px 0;
+            padding: 16px 20px;
+            background: linear-gradient(to right, #f1f8e9, #e8f5e9);
+            border-radius: 14px;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+        }
+
+        li:before {
+            content: counter(item);
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            background: linear-gradient(135deg, #66bb6a, #2e7d32);
+            color: white;
+            border-radius: 50%;
+            font-weight: bold;
+            margin-right: 18px;
+            flex-shrink: 0;
+        }
+
+        li:hover {
+            transform: translateX(10px);
+            background: linear-gradient(to right, #dcedc8, #c5e1a5);
+            box-shadow: 0 6px 18px rgba(34, 139, 34, 0.15);
+        }
+
+        a {
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 20px;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #1b5e20;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Exercises</h1>
+        <p class="intro">Popular Search Engines:</p>
+        <ol>
+            <li><a href="https://www.yahoo.com" target="_blank">Yahoo</a></li>
+            <li><a href="https://www.google.com" target="_blank">Google</a></li>
+            <li><a href="https://www.bing.com" target="_blank">Bing</a></li>
+            <li><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+            <li><a href="https://www.microsoft.com" target="_blank">Microsoft</a></li>
+        </ol>
+    </div>
+</body>
+</html>
